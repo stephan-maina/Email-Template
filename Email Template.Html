@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- GOOGLE FONT (Playfair Display)-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="Email Template.Css" />
+    <title>Email Template</title>
+    <style>
+      .error-message {
+        color: rgb(255, 255, 255);
+        background-color: maroon;
+        padding: -25px;
+        border-radius: 4px;
+        margin-top: 78px;
+        margin-bottom: -84px;
+        margin-left: 35px;
+        width: 295px;
+        height: 25px;
+        display: none;
+      }
+    </style>
+    <script>
+      function validateForm(event) {
+        event.preventDefault();
+        const email = document.getElementById("email").value;
+        const password = document.getElementById("current-password").value;
+        const errorMessage = document.getElementById("email-error-text");
+
+        if (!email) {
+          errorMessage.style.display = "block";
+        } else {
+          errorMessage.style.display = "none";
+          alert("Form submitted");
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div class="signup-box">
+      <h1>Want to check out this file? <br />Sign up or Log in</h1>
+      <form onsubmit="validateForm(event)">
+        <button
+          type="button"
+          use="hollow"
+          data-no-auto-focus="true"
+          class="landing_form_2024_brand_updates--brandButton--0je-o auth_view--brandButton--Le4wb auth_view--brandButtonBase--RAO-j auth_branding--brand--WeCuU auth_view--fullWidth--ffDfw landing_form_2024_brand_updates--hollowButton--WGr1- auth_view--brandButton--Le4wb auth_view--brandButtonBase--RAO-j auth_branding--brand--WeCuU landing_form_2024_brand_updates--figmaSans--NJIR3 auth_2024_brand_updates--figmaSans--TbNxo"
+          onclick="window.location.href='https://accounts.google.com/o/oauth2/v2/auth/oauthchooseaccount?client_id=532352704633-6pkces9iboppp465idnovkcqtlsa8j7t.apps.googleusercontent.com&redirect_uri=https%3A%2F%2Fwww.figma.com%2Ffinish_google_sso&response_type=code&scope=profile%20email&access_type=online&prompt=select_account&state=yHSpjxeMIOn6JdNb7PitVpT10CWbTHsj7cqMkI8uTpQm&service=lso&o2v=2&ddm=0&flowName=GeneralOAuthFlow'"
+        >
+          <span
+            class="landing_form_2024_brand_updates--brandButtonContent--u0Kkj"
+          >
+            <div class="landing_form--googleButtonInner--LUmAu">
+              <span
+                class="landing_form--googleIcon--5qkTs svg--autoscale---9awM"
+                width="18px"
+                height="18px"
+                style="height: 18px; width: 18px"
+              >
+                <svg
+                  class="svg"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="18"
+                  height="18"
+                  viewBox="0 0 18 18"
+                >
+                  <path
+                    fill="#4285f4"
+                    fill-opacity="1"
+                    fill-rule="evenodd"
+                    stroke="none"
+                    d="M17.64 9.2c0-.637-.057-1.251-.164-1.84H9v3.481h4.844c-.209 1.125-.843 2.078-1.796 2.717v2.258h2.908c1.702-1.567 2.684-3.874 2.684-6.615z"
+                  ></path>
+                  <path
+                    fill="#34a853"
+                    fill-opacity="1"
+                    fill-rule="evenodd"
+                    stroke="none"
+                    d="M9.003 18c2.43 0 4.467-.806 5.956-2.18l-2.909-2.26c-.806.54-1.836.86-3.047.86-2.344 0-4.328-1.584-5.036-3.711H.96v2.332C2.44 15.983 5.485 18 9.003 18z"
+                  ></path>
+                  <path
+                    fill="#fbbc05"
+                    fill-opacity="1"
+                    fill-rule="evenodd"
+                    stroke="none"
+                    d="M3.964 10.712c-.18-.54-.282-1.117-.282-1.71 0-.593.102-1.17.282-1.71V4.96H.957C.347 6.175 0 7.55 0 9.002c0 1.452.348 2.827.957 4.042l3.007-2.332z"
+                  ></path>
+                  <path
+                    fill="#ea4335"
+                    fill-opacity="1"
+                    fill-rule="evenodd"
+                    stroke="none"
+                    d="M9.003 3.58c1.321 0 2.508.454 3.44 1.345l2.582-2.58C13.464.891 11.428 0 9.002 0 5.485 0 2.44 2.017.96 4.958L3.967 7.29c.708-2.127 2.692-3.71 5.036-3.71z"
+                  ></path>
+                </svg>
+              </span>
+              <span class="landing_form_2024_brand_updates--googleText--lnuvW"
+                >Continue with Google</span
+              >
+            </div>
+          </span>
+        </button>
+        <p class="sign_in_and_up_2024_brand_updates--orBlock--2jMvn">or</p>
+
+        <input
+          class="branded_inputs_2024_brand_update--input--PFtu- auth_2024_brand_updates--figmaSans--TbNxo lazy_input--lazyInput--1mJeW"
+          name="email"
+          placeholder="Email"
+          type="email"
+          id="email"
+          autocomplete="username"
+          autocapitalize="off"
+          autocorrect="off"
+          aria-invalid="false"
+          aria-describedby="email-error-text"
+          dir="auto"
+          value=""
+        />
+        <div style="height: 16px"></div>
+        <p
+          class="sign_in_and_up_2024_brand_updates--brandError--W95WS auth_2024_brand_updates--brandError--iN6ZK auth_2024_brand_updates--figmaSans--TbNxo sign_in_and_up_2024_brand_updates--figmaSans--rxW6f auth_2024_brand_updates--figmaSans--TbNxo error-message"
+          id="email-error-text"
+        >
+          Please provide your email.
+        </p>
+        <input
+          class="branded_inputs_2024_brand_update--input--PFtu- auth_2024_brand_updates--figmaSans--TbNxo lazy_input--lazyInput--1mJeW"
+          name="password"
+          type="password"
+          placeholder="Password"
+          autocapitalize="off"
+          autocorrect="off"
+          autocomplete="current-password"
+          id="current-password"
+          aria-invalid="false"
+          aria-describedby="password-error-text"
+          dir="auto"
+          value=""
+        />
+
+        <input
+          id="opt_in_email_checkbox"
+          name="opt_in_email"
+          type="checkbox"
+          class="extra_info_2024_brand_updates--checkbox--TWQ0N"
+          value="false"
+        />
+        <label
+          class="extra_info_2024_brand_updates--checkboxLabel--Q5ij3"
+          for="opt_in_email_checkbox"
+          >Subscribe to Figma tips and updates*</label
+        >
+        <div></div>
+        <button
+          type="submit"
+          class="landing_form_2024_brand_updates--brandButton--0je-o auth_view--brandButton--Le4wb auth_view--brandButtonBase--RAO-j auth_branding--brand--WeCuU auth_view--fullWidth--ffDfw landing_form_2024_brand_updates--brandButtonHoverIconEffects--Ca32N landing_form_2024_brand_updates--figmaSans--NJIR3 auth_2024_brand_updates--figmaSans--TbNxo sign_in_and_up--wideButton--t-8Hr auth_view--wideButton--Db9su auth_view--fullWidth--ffDfw"
+        >
+          <span
+            class="landing_form_2024_brand_updates--brandButtonContent--u0Kkj landing_form_2024_brand_updates--standardButtonContent--pwYH-"
+          >
+            <span
+              width="24px"
+              height="24px"
+              class="svg-container landing_form_2024_brand_updates--iconContainer--SeWKn"
+            >
+              <svg
+                class="svg"
+                xmlns="http://www.w3.org/2000/svg"
+                width="22"
+                height="21"
+                viewBox="0 0 22 21"
+              >
+                <path
+                  fill="#fff"
+                  fill-rule="evenodd"
+                  d="M11.957 3.719 18.5 10.5l-6.543 6.781-.642-.62 5.514-5.715H4.5v-.892h12.33l-5.515-5.715.642-.62Z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+            </span>
+            Create account
+          </span>
+        </button>
+      </form>
+      <div
+        class="sign_in_and_up_2024_brand_updates--termsWrapper--C3SZo auth_2024_brand_updates--text--R2XPq"
+      >
+        <p
+          class="sign_in_and_up_2024_brand_updates--termsFlattened--IhcJq auth_view--footerText--M9q2W"
+        >
+          By clicking "Create account" or "Continue with Google", you agree to
+          the
+          <a
+            target="_blank"
+            rel="noopener"
+            class="sign_in_and_up--termsLink--lxirF"
+            tabindex="-1"
+            href="https://www.figma.com/legal/tos/"
+            >Figma TOS</a
+          >
+          and
+          <a
+            target="_blank"
+            rel="noopener"
+            class="sign_in_and_up--termsLink--lxirF"
+            tabindex="-1"
+            href="https://www.figma.com/legal/privacy/"
+            >Privacy Policy</a
+          >.
+        </p>
+        <div style="height: 1px"></div>
+        <p
+          class="extra_info_2024_brand_updates--termsFlattened--EeW4g auth_view--footerText--M9q2W"
+        >
+          *By opting in, you are consenting to receive product, service and
+          events updates from Figma. You can unsubscribe at any time
+        </p>
+        <div style="height: 16px"></div>
+      </div>
+
+      <a class="Use-single-sign-on" rel="noopener">Use single sign-on</a>
+      <p class="para-2">
+        Already have an account? <a href="Login.html">Login In</a>
+      </p>
+    </div>
+  </body>
+</html>
